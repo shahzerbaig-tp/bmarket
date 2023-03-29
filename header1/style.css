@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: #333D4A;
+}
+.image{
+    height: 2.6rem;
+    width: 5.2rem;
+    border: 2px solid black;
+}
+.userBox{
+    border: 2px dotted blue;
+}
+.hamburger__wrapper{
+    display: none;
+}
+
+/* Bottom Header */
+ul{
+    list-style-type: none;
+    display: flex;
+    font-size: .9rem;
+}
+li{
+    margin-left: 30px;
+    color: white;
+    font-weight: 400;
+}
+.location__wrapper{
+    display: flex;
+    align-items: center;
+}
+.pin__wrapper{
+    height: 16px;
+    width: 16px;
+}
+@media screen and (max-width:726px) {
+    .hamburger__wrapper{
+        display: block;
+    }
+    ul{
+        display:none ;
+    }
+}

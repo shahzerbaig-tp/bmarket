@@ -1,0 +1,98 @@
+/* Flex Properties */
+.fx{
+    display: flex;
+    flex-direction: row;
+}
+.fx-cl{
+    flex-direction: column;
+}
+.border{
+    border: 1px solid white;
+}
+.fx-rw-center{
+    justify-content: center;
+    align-items: center;
+}
+.fx-rw-end{
+    justify-content: end;
+}
+/* Grid */
+.grd{
+    display: grid;
+}
+
+/* Display */
+
+.hide{
+    display: hide;
+}
+/* Decoration */
+.no-border{
+    border: none;
+}
+
+
+/* Background */
+.bg-white{
+    background-color: white;
+}
+
+
+/* width */
+.wd-20{
+    width: 20%;
+}
+.wd-40{
+    width: 40%;
+}
+.wd-50{
+    width: 50%;
+}
+.wd-60{
+    width: 60%;
+}
+.wd-80{
+    width: 80%;
+}
+.mx-width{
+    width: 100%;
+}
+.mx-height{
+    height: 100%;
+}
+.fit-content-wd{
+    width: fit-content;
+}
+
+/* Height */
+.ht-30{
+    height: 30px;
+}
+/* icon */
+
+.md-icon{
+    height: 15px;
+    width: 15px;
+}
+
+/* Padding */
+.pd-10{
+    padding: 10px;
+}
+.pd-2{
+    padding: 2px;
+}
+.pd-l-2{
+    padding-left: 2px;
+}
+
+/* Border */
+.rd-brd-5{
+    border-radius:5px ;
+}
+
+/* Font */
+
+.ft-white{
+    color: white;
+}
