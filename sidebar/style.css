@@ -1,0 +1,88 @@
+:root{
+    --light:#C7C5C3;
+    --dark:#222222;
+}
+.font-light{
+    color: var(--light);
+}
+button{
+    border: none;
+}
+.cl{
+    text-decoration: none;
+    color: lightcoral;
+    font-weight: 500;
+}
+.font-dark{
+    color: var(--dark);
+}
+#sidebar{
+    width: 17vw;
+}
+#categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#accordian-data{
+    display: none;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    border-bottom:1px solid ;
+}
+#elements{
+    padding: 20px;
+}
+.textBoxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+}
+#text1,#text2{
+    background-color: white;
+    width: 75px;
+    height: 30px;
+    border: 3px solid lightgreen;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+}
+#myRange{
+    color: lightgreen;
+}
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.btn_initial--reset{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 22%;
+}
+
+.btn_initial{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 22%;
+}
+
+@media screen and (max-width:723px) {
+    #sidebar{
+        display: none;
+    }
+}

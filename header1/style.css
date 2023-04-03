@@ -1,21 +1,63 @@
 body{
     margin: 0;
+    
 }
 header{
     background-color: #333D4A;
 }
+
+header{
+    display: grid;
+    grid-template-columns: 20vw auto 20vw;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo search user" "nav nav location";
+}    
+
+
 .image{
     height: 2.6rem;
     width: 5.2rem;
     border: 2px solid black;
 }
-.userBox{
-    border: 2px dotted blue;
-}
+
 .hamburger__wrapper{
     display: none;
+    grid-area: hamburger;
+    padding: 8px 20px 0 20px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: logo;
+    padding: 0 20px 0 20px;
+}
+.search__wrapper{
+    padding:0 20px 0 20px;
+    grid-area: search;
+}
+.image__wrapper{
+    padding: 5px 0 5px 0;
+}
+.user{
+    grid-area: user;
 }
 
+.search__label{
+ padding: 0 10px 0 10px;   
+}
+.userProfile{
+
+}
+
+.nav__wrapper{
+    grid-area: nav;
+}
+.location__wrapper{
+    grid-area: location;
+    padding: 0 20px 0 20px;
+}
 /* Bottom Header */
 ul{
     list-style-type: none;
@@ -30,16 +72,34 @@ li{
 .location__wrapper{
     display: flex;
     align-items: center;
+
 }
 .pin__wrapper{
     height: 16px;
     width: 16px;
 }
+.hamImage{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
 @media screen and (max-width:726px) {
     .hamburger__wrapper{
         display: block;
     }
-    ul{
+    .nav__wrapper{
         display:none ;
     }
+    header{
+        display: grid;
+        grid-template-columns: 20vw auto 20vw ;
+        grid-template-rows: auto;
+        grid-template-areas: "hamburger logo user" "search search search" "location location location";
+    }
+    .logo{
+        justify-content: start;
+    }
+
 }

@@ -1,0 +1,16 @@
+.washing{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.washing__interactive{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.washing-image__wrapper{
+    width: fit-content;
+    margin:  auto;
+}
